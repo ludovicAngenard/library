@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @borrow %>
+
+<div>
+  <%= link_to "Edit this emprunt", edit_emprunt_path(@borrow) %> |
+  <%= link_to "Back to emprunts", emprunts_path %>
+
+  <%= button_to "Destroy this emprunt", @borrow, method: :delete %>
+</div>
